@@ -1,0 +1,32 @@
+import telebot
+token = "656849369:AAFdYukcDyzriNbZIHOIwCgWdikUByrFaDQ"
+bot = telebot.TeleBot(token)
+#bot.send_message(205830986, "425345")
+
+@bot.message_handler(content_type =['text'])
+def handle_text(message):
+    if message.text == "a":
+        bot.send_message(message.chat.id, "q")
+    elif message.text == "a":
+            bot.send_message(message.chat.id, "q")
+    else:
+            bot.send_message(message.chat.id, "q")
+
+    bot.polling(none_stop=True, interval=0)
+
+
+    @bot.message_handler(content_type=['text'])
+def handle_text(message):
+    if message.text == "a":
+        bot.send_message(message.chat.id, "q")
+    elif message.text == "c":
+            bot.send_message(message.chat.id, "e")
+    else:
+            bot.send_message(message.chat.id, "yyyy")
+
+            # bot.send_message(message.chat.id, "Я Петяов. Мой IQ-122. Я могу собрать из головоломки букву А, а ты на что способен? "
+                                     ##  "Если да, то вот тебе первая загадка..."
+                                      "Почему следует идти 9 сентября на пенсионный протест?"
+                                      "1. Потому что Урепление народовластия и осознание идентичности."
+                                      "2. Потому что Навальный няшка."
+                                      "3. Потому что иди нах. ")
